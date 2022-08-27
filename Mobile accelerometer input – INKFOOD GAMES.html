@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<!--||  JM Twitter Cards by Julien Maury 11.1.10  ||-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@https://twitter.com/InkfoodGames">
+<meta name="twitter:site" content="@https://twitter.com/InkfoodGames">
+<meta name="twitter:title" content="Mobile accelerometer input">
+<meta name="twitter:description" content="Using mobile accelerometer as input for your html5 game or web app. Includes two examples to play with.">
+<meta name="twitter:image" content="https://www.inkfood.com/wordprez/wp-content/uploads/html5_gyro_header.png">
+<!--||  /JM Twitter Cards by Julien Maury 11.1.10  ||-->
+<title>Mobile accelerometer input – INKFOOD GAMES</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="INKFOOD GAMES » Feed" href="https://www.inkfood.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="INKFOOD GAMES » Comments Feed" href="https://www.inkfood.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="INKFOOD GAMES » Mobile accelerometer input Comments Feed" href="https://www.inkfood.com/mobile-accelerometer-input/feed/">
+		<script async="" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/analytics.js"></script><script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.inkfood.com\/wordprez\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.4"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="example_widget-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_005.css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_006.css" media="all">
+<link rel="stylesheet" id="wp-components-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_007.css" media="all">
+<link rel="stylesheet" id="wp-block-editor-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_004.css" media="all">
+<link rel="stylesheet" id="wp-nux-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_003.css" media="all">
+<link rel="stylesheet" id="wp-reusable-blocks-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_008.css" media="all">
+<link rel="stylesheet" id="wp-editor-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style.css" media="all">
+<link rel="stylesheet" id="simple-iframe-style-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/blocks.css" media="all">
+<link rel="stylesheet" id="wp-bootstrap-blocks-styles-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style-index.css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/styles.css" media="all">
+<link rel="stylesheet" id="fancybox-for-wp-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/fancybox.css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/bootstrap.css" media="all">
+<link rel="stylesheet" id="fontAwesome-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/all.css" media="all">
+<link rel="stylesheet" id="inkfood2021-style-css" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/style_002.css" media="all">
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/jquery.js" id="jquery-core-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script id="gainwp-tracking-analytics-events-js-extra">
+var gainwpUAEventsData = {"options":{"event_tracking":"1","event_downloads":"zip|mp3*|mpe*g|pdf|docx*|pptx*|xlsx*|rar*","event_bouncerate":0,"aff_tracking":1,"event_affiliates":"\/out\/","hash_tracking":0,"root_domain":"inkfood.com","event_timeout":100,"event_precision":0,"event_formsubmit":0,"ga_pagescrolldepth_tracking":0,"ga_with_gtag":0}};
+</script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/tracking-analytics-events.js" id="gainwp-tracking-analytics-events-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/jquery_002.js" id="fancybox-for-wp-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/bootstrap.js" id="bootstrapjs-js"></script>
+<link rel="https://api.w.org/" href="https://www.inkfood.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.inkfood.com/wp-json/wp/v2/posts/536"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.inkfood.com/wordprez/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.inkfood.com/wordprez/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.4">
+<link rel="canonical" href="https://www.inkfood.com/mobile-accelerometer-input/">
+<link rel="shortlink" href="https://www.inkfood.com/?p=536">
+<link rel="alternate" type="application/json+oembed" href="https://www.inkfood.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.inkfood.com%2Fmobile-accelerometer-input%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.inkfood.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.inkfood.com%2Fmobile-accelerometer-input%2F&amp;format=xml">
+
+<!-- Fancybox for WordPress v3.3.3 -->
+<style type="text/css">
+	.fancybox-slide--image .fancybox-content{background-color: #FFFFFF}div.fancybox-caption{display:none !important;}
+	
+	img.fancybox-image{border-width:10px;border-color:#FFFFFF;border-style:solid;}
+	div.fancybox-bg{background-color:rgba(102,102,102,0.3);opacity:1 !important;}div.fancybox-content{border-color:#FFFFFF}
+	div#fancybox-title{background-color:#FFFFFF}
+	div.fancybox-content{background-color:#FFFFFF}
+	div#fancybox-title-inside{color:#333333}
+	
+	
+	
+	div.fancybox-caption p.caption-title{display:inline-block}
+	div.fancybox-caption p.caption-title{font-size:14px}
+	div.fancybox-caption p.caption-title{color:#333333}
+	div.fancybox-caption {color:#333333}div.fancybox-caption p.caption-title {background:#fff; width:auto;padding:10px 30px;}div.fancybox-content p.caption-title{color:#333333;margin: 0;padding: 5px 0;}body.fancybox-active .fancybox-container .fancybox-stage .fancybox-content .fancybox-close-small{display:block;}
+</style><script type="text/javascript">
+	jQuery(function () {
+
+		var mobileOnly = false;
+		
+		if (mobileOnly) {
+			return;
+		}
+
+		jQuery.fn.getTitle = function () { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+			var arr = jQuery("a[data-fancybox]");
+									jQuery.each(arr, function() {
+										var title = jQuery(this).children("img").attr("title");
+										 var caption = jQuery(this).next("figcaption").html();
+                                        if(caption && title){jQuery(this).attr("title",title+" " + caption)}else if(title){ jQuery(this).attr("title",title);}else if(caption){jQuery(this).attr("title",caption);}
+									});			}
+
+		// Supported file extensions
+
+				var thumbnails = jQuery("a:has(img)").not(".nolightbox").not('.envira-gallery-link').not('.ngg-simplelightbox').filter(function () {
+			return /\.(jpe?g|png|gif|mp4|webp|bmp|pdf)(\?[^/]*)*$/i.test(jQuery(this).attr('href'))
+		});
+		
+
+		// Add data-type iframe for links that are not images or videos.
+		var iframeLinks = jQuery('.fancyboxforwp').filter(function () {
+			return !/\.(jpe?g|png|gif|mp4|webp|bmp|pdf)(\?[^/]*)*$/i.test(jQuery(this).attr('href'))
+		}).filter(function () {
+			return !/vimeo|youtube/i.test(jQuery(this).attr('href'))
+		});
+		iframeLinks.attr({"data-type": "iframe"}).getTitle();
+
+				// Gallery All
+		thumbnails.addClass("fancyboxforwp").attr("data-fancybox", "gallery").getTitle();
+		iframeLinks.attr({"data-fancybox": "gallery"}).getTitle();
+
+		// Gallery type NONE
+		
+		// Call fancybox and apply it on any link with a rel atribute that starts with "fancybox", with the options set on the admin panel
+		jQuery("a.fancyboxforwp").fancyboxforwp({
+			loop: false,
+			smallBtn: true,
+			zoomOpacity: "auto",
+			animationEffect: "fade",
+			animationDuration: 500,
+			transitionEffect: "fade",
+			transitionDuration: "300",
+			overlayShow: true,
+			overlayOpacity: "0.3",
+			titleShow: true,
+			titlePosition: "inside",
+			keyboard: true,
+			showCloseButton: true,
+			arrows: true,
+			clickContent:false,
+			clickSlide: "close",
+			mobile: {
+				clickContent: function (current, event) {
+					return current.type === "image" ? "toggleControls" : false;
+				},
+				clickSlide: function (current, event) {
+					return current.type === "image" ? "close" : "close";
+				},
+			},
+			wheel: false,
+			toolbar: true,
+			preventCaptionOverlap: true,
+			onInit: function() { },			onDeactivate
+	: function() { },		beforeClose: function() { },			afterShow: function(instance) { jQuery( ".fancybox-image" ).on("click", function( ){ ( instance.isScaledDown() ) ? instance.scaleToActual() : instance.scaleToFit() }) },				afterClose: function() { },					caption : function( instance, item ) {var title ="";if("undefined" != typeof jQuery(this).context ){var title = jQuery(this).context.title;} else { var title = ("undefined" != typeof jQuery(this).attr("title")) ? jQuery(this).attr("title") : false;}var caption = jQuery(this).data('caption') || '';if ( item.type === 'image' && title.length ) {caption = (caption.length ? caption + '<br />' : '') + '<p class="caption-title">'+title+'</p>' ;}return caption;},
+		afterLoad : function( instance, current ) {current.$content.append('<div class=\"fancybox-custom-caption inside-caption\" style=\" position: absolute;left:0;right:0;color:#000;margin:0 auto;bottom:0;text-align:center;background-color:#FFFFFF \">' + current.opts.caption + '</div>');},
+			})
+		;
+
+			})
+</script>
+<!-- END Fancybox for WordPress -->
+<link href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/css2.css" rel="stylesheet"><link href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/css2_002.css" rel="stylesheet">		<style type="text/css">
+		h1,h2,h3,h4,h5,h6{font-family: "Roboto"}body{font-family: "Poppins"}			body{color:  #0a0a0a;padding-top:48px;}
+			#masthead { background-color: #ffffff; }
+				.entry-content a:not(.has-text-color):not(.wp-block-button__link){
+					color: #333;
+					text-decoration: underline;
+					font-weight:900;
+				}
+				.entry-content a:not(.has-text-color,.wp-block-button__link):visited{color: #333;}
+			#masthead a { color: #333; }
+			.site-footer { background-color: #333; }
+			.site-footer,.site-footer a { color: #fff; }
+			.highliteColor, .highliteColor > * { color:#dd9933!important;}
+			.highliteBorder, .highliteBorder > * { border-color:#dd9933!important;}
+			.highliteBackground, .highliteBackground > * { background-color:#dd9933!important;}
+			.navbar-nav a { color:#dd9933!important;}
+			 { border-color:#dd9933!important;}
+			 { background-color:#dd9933!important;}
+
+		</style>
+    <style id="custom-background-css">
+body.custom-background { background-color: #f7f7f7; }
+</style>
+	<style>body
+{
+	height:100%;
+}</style><link rel="icon" href="https://www.inkfood.com/wordprez/wp-content/uploads/cropped-logo_inkfood_Large-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.inkfood.com/wordprez/wp-content/uploads/cropped-logo_inkfood_Large-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.inkfood.com/wordprez/wp-content/uploads/cropped-logo_inkfood_Large-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.inkfood.com/wordprez/wp-content/uploads/cropped-logo_inkfood_Large-270x270.png">
+
+<!-- BEGIN GAINWP v5.4.6 Universal Analytics - https://intelligencewp.com/google-analytics-in-wordpress/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-42467129-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END GAINWP Universal Analytics -->
+<script async="" type="text/javascript" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/count.js"></script><script type="text/javascript" async="" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/embed.js"></script><link rel="prefetch" as="style" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/a_data_004/lounge.css"><link rel="prefetch" as="script" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/a_data_004/common.js"><link rel="prefetch" as="script" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/a_data_004/lounge_002.js"><link rel="prefetch" as="script" href="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/a_data_004/config.js"><script charset="utf-8" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/momenttimeline.js"></script><script charset="utf-8" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/timeline.js"></script></head>
+
+<body class="post-template-default single single-post postid-536 single-format-standard custom-background wp-embed-responsive">
+<div id="page" class="site">
+
+	<header id="masthead" class="fixed-top" role="banner">
+	    <nav class="navbar navbar-expand-lg navbar-light p-1">
+	    	<div class="container-fluid">
+			   	<a class="text-decoration-none navbar-brand site-title navbar-text p-0 ml-2" href="https://www.inkfood.com/" rel="home">
+				   <img class="mr-2" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/cropped-logo_inkfood_Large.png" width="40" height="40">					<div class="float-right">
+					<h4 class="blog-name">INKFOOD GAMES</h4>
+					<small class="site-description text-muted" style="position:absolute;top:25px;">Development &amp; Design</small>
+					</div>
+				</a>
+				<button class="navbar-toggler navbar-toggler-right mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+		   		<div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+	            <ul id="menu-mainmenu" class="navbar-nav"><li style="height:30px;"></li><li id="menu-item-5619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-5619 nav-item"><a href="https://www.inkfood.com/" class="nav-link">Home</a></li>
+<li id="menu-item-4513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4513 nav-item"><a href="https://www.inkfood.com/#Contact" class="nav-link">Contact</a></li>
+<li id="menu-item-5913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5913 nav-item"><a href="https://www.inkfood.com/category/playables/" class="nav-link">Playables</a></li>
+<li><form role="search" method="get" class="search-form" action="https://www.inkfood.com/">
+  <div class="input-group">
+    <input type="text" class="search-field rounded-pill form-control pl-3" placeholder="Search" name="s" aria-describedby="search-form">
+      <span class="input-group-append">
+      <button class="btn text-dark border-0 rounded-pill ml-n5" type="submit" style="z-index:10;">
+                <i class="fa fa-search"></i>
+            </button>
+      </span>
+  </div>   
+</form></li> <li style="height:30px;"></li></ul>	          </div>
+
+	        </div>
+		</nav>
+	</header><!-- #masthead -->
+	<main id="primary" class="site-main">
+
+		
+<article id="post-536" class="post-536 post type-post status-publish format-standard has-post-thumbnail hentry category-blog tag-script">
+
+			<div class="post-thumbnail alignfull header-image" style="background-image: url('https://www.inkfood.com/wordprez/wp-content/uploads/html5_gyro_header.png');">
+			<!-- <img width="1000" height="400" src="https://www.inkfood.com/wordprez/wp-content/uploads/html5_gyro_header.png" class="attachment-full size-full wp-post-image" alt="" loading="lazy" srcset="https://www.inkfood.com/wordprez/wp-content/uploads/html5_gyro_header.png 1000w, https://www.inkfood.com/wordprez/wp-content/uploads/html5_gyro_header-300x120.png 300w" sizes="(max-width: 1000px) 100vw, 1000px" /> -->
+		</div><!--  .post-thumbnail -->
+		<div class="container">
+		<header class="entry-header col-12 col-lg-9 text-center pt-3">
+			<h2 class="entry-title">Mobile accelerometer input</h2>		</header><!-- .entry-header -->
+		<div class="row">
+			<div class="col-12 col-lg-9">
+				<hr class="m-0">
+									<div class="entry-meta text-center text-muted">
+						<span class="byline p-2 small"><i class="pr-2 fas fa-tag"></i>script</span>					</div><!-- .entry-meta -->
+				
+
+				<div class="entry-content pt-4">
+					
+<p>Almost each mobile device has an&nbsp;accelerometer built in. 
+This&nbsp;accelerometer&nbsp;measures tilt and motion. Any motion of the
+ mobile device can be captured with javascript and html5. This values 
+can be used to control either a mobile game or a webApp accordingly to 
+the motion of the device. It’s really simple to read this 
+data&nbsp;without any&nbsp;library, we just use the javascript 
+deviceOrientation event.&nbsp;There are other events that are related to
+ device motion, but the&nbsp;deviceOrientation event has the best cross 
+device compatibility.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-center rounded has-pale-cyan-blue-color has-vivid-cyan-blue-background-color has-text-color has-background">
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:5%">
+<p class="has-text-align-center mb-0"><i class="far fa-2x fa-lightbulb"></i></p>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:95%">
+<p class="mb-0">Read the W3C recommendation about all the device motion events&nbsp;<a rel="noreferrer noopener" href="http://w3c.github.io/deviceorientation/spec-source-orientation.html" target="_blank">here</a>. There you can get all the informations you eventually need.</p>
+</div>
+</div>
+
+
+
+<p></p>
+
+
+
+<h2>DeviceOrientation event</h2>
+
+
+
+<p>The device deviceOrientation event returns multiple values, such as 
+gamma, beta and alpha. Each of this values represents the current 
+position of the device itself. Once the device is in motion, the values 
+will change accordingly. The deviceOrientation event must be applied to 
+the window object.&nbsp;It might be a good idea to check first if 
+the&nbsp;deviceOrientation event is available, this is done by the first
+ line of the code. Once the device is in motion, we can catch all the 
+values and start using them.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column">
+<div class="wp-block-image is-style-default text-center"><figure class="aligncenter is-resized"><img loading="lazy" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/gamma.png" alt="gamma" class="wp-image-3161" width="245" height="320"><figcaption>gamma</figcaption></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image is-style-default text-center"><figure class="aligncenter"><img src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/beta.png" alt="beta" class="wp-image-3166"><figcaption>beta</figcaption></figure></div>
+</div>
+
+
+
+<div class="wp-block-column">
+<div class="wp-block-image is-style-default text-center"><figure class="aligncenter"><img src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/alpha.png" alt="alpha" class="wp-image-3164"><figcaption>alpha</figcaption></figure></div>
+</div>
+</div>
+
+
+
+<p></p>
+
+
+
+<pre class="wp-block-code rounded"><code>if (window.DeviceOrientationEvent) {
+		
+		window.addEventListener("deviceorientation", function(event) 
+		{
+			
+			var xValue = Math.round(event.gamma);
+			var yValue = Math.round(event.beta);
+			var Rotation = Math.round(event.alpha);
+			
+		}, true);
+		
+		
+		
+	} else {
+	alert("Sorry, your browser doesn't support Device Orientation");
+	}</code></pre>
+
+
+
+<p></p>
+
+
+
+<p>These are two simple&nbsp;examples for the device orientation event. 
+The code of the demos are almost identical to the code&nbsp;above. It 
+just uses the values to manipulate an object on the screen. This is a 
+basic test of the&nbsp;device orientation event, it may need some 
+additional work for better results.</p>
+
+
+
+<p></p>
+
+
+
+<div class="wp-block-columns are-vertically-aligned-top">
+<div class="wp-block-column is-vertically-aligned-top bg-white rounded p-2 pt-0 d-flex flex-column align-self-stretch">
+<div class="wp-block-image is-style-default"><figure class="aligncenter"><img src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/Gyro_Visual.png" alt=""></figure></div>
+
+
+
+<h2 class="has-text-align-center">Force demo</h2>
+
+
+
+<p>A simple visualization of the force that is applied while the mobile device is in motion.</p>
+
+
+
+<div class="wp-block-buttons aligncenter">
+<div class="wp-block-button is-style-outline mt-auto"><a class="wp-block-button__link" href="https://inkfood.github.io/Gyro_demo/" target="_blank" rel="noreferrer noopener">Run</a></div>
+
+
+
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://github.com/inkfood/Gyro_demo" target="_blank" rel="noreferrer noopener">Code</a></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-top bg-white rounded p-2 pt-0 d-flex flex-column">
+<div class="wp-block-image is-style-default"><figure class="aligncenter"><img src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/Gyro_ballApp.png" alt="Gyro_ballApp" class="wp-image-3179"></figure></div>
+
+
+
+<h2 class="has-text-align-center">Ball demo</h2>
+
+
+
+<p>A Ball is moving accordingly to the device motion.&nbsp;Stopped by the boundaries of the display.</p>
+
+
+
+<div class="wp-block-buttons aligncenter">
+<div class="wp-block-button is-style-outline mt-auto"><a class="wp-block-button__link" href="https://inkfood.github.io/Gyro_Ball2/" target="_blank" rel="noreferrer noopener">Run</a></div>
+
+
+
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://github.com/inkfood/Gyro_Ball2" target="_blank" rel="noreferrer noopener">Code</a></div>
+</div>
+</div>
+</div>
+
+
+
+<p></p>
+
+
+
+<h2>Conclusion</h2>
+
+
+
+<p>This solution worked on almost every mobile device and browser i’ve 
+tested it on. It’s easy and fast to implement. Once we get all the 
+values, it’s possible to animate or manipulate everything accordingly to
+ the device motion. This is basic html5 and will work in combination 
+with all html5 based libraries.</p>
+
+
+
+<p></p>
+				</div><!-- .entry-content -->
+
+				<footer class="entry-footer">
+					<br><hr class="col-10 mb-0"><div class="text-center pb-4"><span class="cat-links p-2"><i class="p-1 far fa-folder-open"></i><a href="https://www.inkfood.com/category/blog/" rel="category tag">Blog</a></span></div><a href="https://www.inkfood.com/" class="media rounded bg-white p-2 text-decoration-none"> <img class="d-flex mr-3" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/86cc32aea20ff61bd85298c20bc3229e.png" alt="Generic placeholder image"> <div class="media-body"><h4 class="">Inkfood Games</h4><p>We
+ are experts in creating games and assets of high quality. We create 
+games, websites , mobile apps, tools and any kind of digital 
+entertainment. We also blog occasionally about game development.</p></div></a><!--/.blog-post-author.clearfix--><br><h4 class="text-center">Related Posts</h4><hr> 
+		
+		<div class="container pb-5"><div class="related-posts row">  
+		
+							<div class="col-6 col-md-3 p-1">
+					<a class="text-center bg-white text-decoration-none text-dark rounded d-block" href="https://www.inkfood.com/smoothnoise/" style="height:100%;">
+						
+						<div class="bg-image-sm rounded-top" style="height:150px;background-position:center center; background-size:cover; background-image: url('https://www.inkfood.com/wordprez/wp-content/uploads/phaser_car_icn1.png');">
+						</div>
+						
+						<div class="text-center pb-1"> <h6 class="text-black m-1 mt-3">smoothNoise.js</h6></div>
+					</a>
+				</div>
+							<div class="col-6 col-md-3 p-1">
+					<a class="text-center bg-white text-decoration-none text-dark rounded d-block" href="https://www.inkfood.com/dynamicfontsize/" style="height:100%;">
+						
+						<div class="bg-image-sm rounded-top" style="height:150px;background-position:center center; background-size:cover; background-image: url('https://www.inkfood.com/wordprez/wp-content/uploads/icn_DynamicFontSize.jpg');">
+						</div>
+						
+						<div class="text-center pb-1"> <h6 class="text-black m-1 mt-3">DynamicFontSize</h6></div>
+					</a>
+				</div>
+			 </div></div>  				</footer><!-- .entry-footer -->
+
+				
+<div id="disqus_thread"><iframe id="dsq-app6056" name="dsq-app6056" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px !important; min-width: 100% !important; border: medium none !important; overflow: hidden !important; height: 1647px !important;" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/a_004.html" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div>
+				
+				</div>
+			<div class="col-12 col-lg-3">
+				
+<aside id="secondary" class="widget-area">
+	<section id="custom_html-5" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="text-center">
+
+<h3>Latest release</h3>
+<a href="https://www.inkfood.com/glider-king/" class="rounded-md text-center"><img style="max-width:400px; width:80%;" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/gliderking_icon512.png" class="img-fluid " alt="Responsive image">
+</a>
+<p class="font-weight-bold">
+	GLIDER KING
+	</p>	
+</div></div></section><hr><section id="media_image-2" class="widget widget_media_image"><h3 class="widget-title">PLAYABLES</h3><a href="https://www.inkfood.com/category/playables/"><img src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/mailPromoHeader-300x150.png" class="image wp-image-5859  attachment-medium size-medium" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/mailPromoHeader-300x150.png 300w, Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/mailPromoHeader-768x384.png 768w, Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/mailPromoHeader.png 800w" sizes="(max-width: 300px) 100vw, 300px" width="300" height="150"></a></section><hr><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; padding: 0px; border: medium none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; height: 381.15px;" data-widget-id="profile:InkfoodGames" title="Twitter Timeline" frameborder="0"></iframe> <script async="" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/widgets.js" charset="utf-8"></script></div></section><hr>              <section id="example_widget-2" class="widget widget_example_widget">                      
+    
+            
+                				
+				<p style="text-align: center;"></p>
+
+                <div id="shuffl" style=" background-image:url('https://www.inkfood.com/wordprez/wp-content/uploads/bl-Icecream-copy.png')">
+
+                     <div id="inset"> <div id="block_1" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 0px; top: 0px;">1</div><div id="block_2" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 40px; top: 0px;">2</div><div id="block_3" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 80px; top: 0px;">3</div><div id="block_4" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 120px; top: 0px;">4</div><div id="block_5" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 0px; top: 40px;">5</div><div id="block_6" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 40px; top: 40px;">6</div><div id="block_7" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 80px; top: 40px;">7</div><div id="block_8" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 120px; top: 40px;">8</div><div id="block_9" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 0px; top: 80px;">9</div><div id="block_10" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 40px; top: 80px;">10</div><div id="block_11" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 80px; top: 80px;">11</div><div id="block_12" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 120px; top: 80px;">12</div><div id="block_13" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 0px; top: 120px;">13</div><div id="block_14" onclick="move(event)" ontouchstart="move(event)" class="block" style="left: 40px; top: 120px;">14</div><div id="block_15" onclick="move(event)" ontouchstart="move(event)" class="block red" style="left: 80px; top: 120px;">15</div><div id="empty" style="left: 120px; top: 120px;"></div></div>
+
+                     <div id="counterWrapper">
+                        <div id="digit_3" class="digit">0</div>
+                        <div id="digit_2" class="digit">0</div>
+                        <div id="digit_1" class="digit">0</div>
+                        <div id="digit_0" class="digit">0</div>
+                     </div>
+
+                </div>
+
+            <p style="text-align: center; width:100%; font-weight:600;"><a href="http://www.inkfood.com/">inkfood.com</a></p>
+
+              </section><hr>        </aside><!-- #secondary -->
+			</div>
+		</div><!-- #.siderbar-## -->
+	</div><!-- #.row-## -->
+</article><!-- #post-## -->
+
+	</main><!-- #main -->
+
+
+	<footer id="colophon" class="site-footer pb-4" role="contentinfo">
+		<div class="container pt-4">
+		<section id="custom_html-4" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="row pt-3">
+<h3 class="col-12 text-center text-white">
+We  <i class="pulse fa fa-heart text-danger" aria-hidden="true"></i>  to create Games</h3>
+</div></div></section>		 
+			<small class="site-info d-flex justify-content-center pb-2">
+				<a href="https://www.inkfood.com/privacy-policy/">
+							<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-shield-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M5.443 1.991a60.17 60.17 0 0 0-2.725.802.454.454 0 0 0-.315.366C1.87 7.056 3.1 9.9 4.567 11.773c.736.94 1.533 1.636 2.197 2.093.333.228.626.394.857.5.116.053.21.089.282.11A.73.73 0 0 0 8 14.5c.007-.001.038-.005.097-.023.072-.022.166-.058.282-.111.23-.106.525-.272.857-.5a10.197 10.197 0 0 0 2.197-2.093C12.9 9.9 14.13 7.056 13.597 3.159a.454.454 0 0 0-.315-.366c-.626-.2-1.682-.526-2.725-.802C9.491 1.71 8.51 1.5 8 1.5c-.51 0-1.49.21-2.557.491zm-.256-.966C6.23.749 7.337.5 8 .5c.662 0 1.77.249 2.813.525a61.09 61.09 0 0 1 2.772.815c.528.168.926.623 1.003 1.184.573 4.197-.756 7.307-2.367 9.365a11.191 11.191 0 0 1-2.418 2.3 6.942 6.942 0 0 1-1.007.586c-.27.124-.558.225-.796.225s-.526-.101-.796-.225a6.908 6.908 0 0 1-1.007-.586 11.192 11.192 0 0 1-2.417-2.3C2.167 10.331.839 7.221 1.412 3.024A1.454 1.454 0 0 1 2.415 1.84a61.11 61.11 0 0 1 2.772-.815z"></path>
+								<path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"></path>
+							</svg>
+							PRIVACY POLICY
+						</a> <p style="padding-left:10px;padding-right:10px;">-</p> 
+						<a href="https://www.inkfood.com/terms-of-service/">
+						<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-file-earmark-medical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"></path>
+						<path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z"></path>
+						<path fill-rule="evenodd" d="M7 5a.5.5 0 0 1 .5.5v.634l.549-.317a.5.5 0 1 1 .5.866L8 7l.549.317a.5.5 0 1 1-.5.866L7.5 7.866V8.5a.5.5 0 0 1-1 0v-.634l-.549.317a.5.5 0 1 1-.5-.866L6 7l-.549-.317a.5.5 0 0 1 .5-.866l.549.317V5.5A.5.5 0 0 1 7 5zm-2 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+					  </svg>
+						TERMS OF SERVICE
+					</a>
+
+									</small>
+
+			<small class="site-info d-flex justify-content-center">
+				© INKFOOD GAMES - 2022 - All rights reserved			</small><!-- .site-info -->
+		</div><!--  .container -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+	
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/regenerator-runtime.js" id="regenerator-runtime-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/wp-polyfill.js" id="wp-polyfill-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/www.inkfood.com\/wp-json\/","namespace":"contact-form-7\/v1"}};
+</script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/index.js" id="contact-form-7-js"></script>
+<script id="disqus_count-js-extra">
+var countVars = {"disqusShortname":"inkfood"};
+</script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/comment_count.js" id="disqus_count-js"></script>
+<script id="disqus_embed-js-extra">
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.22"},"disqusIdentifier":"536 http:\/\/www.inkfood.com\/?p=536","disqusShortname":"inkfood","disqusTitle":"Mobile accelerometer input","disqusUrl":"https:\/\/www.inkfood.com\/mobile-accelerometer-input\/","postId":"536"};
+</script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/comment_embed.js" id="disqus_embed-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/navigation.js" id="inkfood2021-navigation-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/site.js" id="inkfood2021-site-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/wp-embed.js" id="wp-embed-js"></script>
+<script src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/script.js" id="example_widget-js"></script>
+
+
+<iframe style="display: none;"></iframe><iframe scrolling="no" allowtransparency="true" src="Mobile%20accelerometer%20input%20%E2%80%93%20INKFOOD%20GAMES_files/widget_iframe.html" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
